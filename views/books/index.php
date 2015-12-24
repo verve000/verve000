@@ -112,8 +112,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
 </div>
 
-<script src="jquery-2.1.4.min.js"></script>
-<script src="modal-books.js"></script>
+<? 
+$this->registerJsFile('jquery-2.1.4.min.js');
+$this->registerJsFile('modal-books.js');
+?>
 <div id="modal_books_view" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
